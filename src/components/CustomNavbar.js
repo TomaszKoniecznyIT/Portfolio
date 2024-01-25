@@ -16,14 +16,14 @@ function CustomNavbar() {
               width="40"
               height="40"
               className="d-inline-block align-top"
-            />
+            />{" "}
+            Tomasz Konieczny
           </Navbar.Brand>
-          <Navbar.Brand href="/">Tomasz Konieczny</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/projects">Projects</Nav.Link>
-            <Nav.Link href="/contact">Contact</Nav.Link>
+          <Nav className="d-flex">
+            <Nav.Link href="/">HOME</Nav.Link>
+            <Nav.Link href="/about">ABOUT</Nav.Link>
+            <Nav.Link href="/projects">PROJECTS</Nav.Link>
+            <Nav.Link href="/contact">CONTACT</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
