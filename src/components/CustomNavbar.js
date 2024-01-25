@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 function CustomNavbar() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar className="bg-gradient" bg="secondary" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/">Tomasz Konieczny</Navbar.Brand>
           <Nav className="me-auto">
