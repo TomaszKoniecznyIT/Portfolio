@@ -2,7 +2,7 @@ import * as React from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import logo from "../../static/images/logo.png";
+import logo from "../../static/images/logo4.png";
 
 function CustomNavbar() {
   return (
