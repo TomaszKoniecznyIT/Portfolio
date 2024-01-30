@@ -3,6 +3,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import logo from "../../static/images/logo4.png";
+import { Image } from "react-bootstrap";
 
 function CustomNavbar() {
   return (
@@ -14,13 +15,7 @@ function CustomNavbar() {
       >
         <Container>
           <Navbar.Brand href="/">
-            <img
-              alt="logo"
-              src={logo}
-              width="40"
-              height="40"
-              className="d-inline-block align-top"
-            />{" "}
+            <Image alt="logo" src={logo} width="40" height="40" rounded />{" "}
             Tomasz Konieczny
           </Navbar.Brand>
           <Nav className="d-flex">
