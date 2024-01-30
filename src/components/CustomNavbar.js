@@ -7,7 +7,11 @@ import logo from "../../static/images/logo4.png";
 function CustomNavbar() {
   return (
     <>
-      <Navbar className="bg-gradient" bg="secondary" data-bs-theme="dark">
+      <Navbar
+        className="bg-gradient shadow"
+        bg="secondary"
+        data-bs-theme="dark"
+      >
         <Container>
           <Navbar.Brand href="/">
             <img
