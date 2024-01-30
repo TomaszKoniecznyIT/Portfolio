@@ -1,20 +1,22 @@
 import React from "react";
-import { Form } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
 
 export default function ContactForm() {
   return (
-    <Form>
-      <Form.Group>
-        <Form.Label>Name</Form.Label>
-        <Form.Control type="name" />
-      </Form.Group>
-      <Form.Group>
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" />
-      </Form.Group>
-      <Form.Group>
+    <Form className="mx-5 text-start">
+      <Row className="mb-4">
+        <Form.Group as={Col} md="6">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="name" className="shadow" />
+        </Form.Group>
+        <Form.Group as={Col} md="6">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" className="shadow" />
+        </Form.Group>
+      </Row>
+      <Form.Group className="mb-4">
         <Form.Label>Message</Form.Label>
-        <Form.Control as="textarea" rows={3} />
+        <Form.Control as="textarea" rows={3} className="shadow" />
       </Form.Group>
     </Form>
   );
