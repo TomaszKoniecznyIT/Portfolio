@@ -7,6 +7,7 @@ export default function About() {
     <Container>
       <Row>
         <Col className="my-5">
+          <h1>About</h1>
           <AboutCard />
         </Col>
       </Row>
