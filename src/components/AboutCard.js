@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardTitle } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import image from "../../static/images/about2.png";
 
 export default function AboutCard() {
@@ -7,7 +7,7 @@ export default function AboutCard() {
     <Card>
       <Card.Img variant="top" src={image} />
       <Card.Body>
-        <CardTitle>Motto</CardTitle>
+        <Card.Title>Motto</Card.Title>
         <Card.Text>
           "Dreams are realized through the consistent dedication and resilience
           of hard work."
