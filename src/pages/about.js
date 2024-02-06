@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import AboutCard from "../components/AboutCard";
 import EducationCard from "../components/EducationCard";
+import WorkExperience from "../components/WorkExperience";
 
 export default function About() {
   return (
@@ -16,7 +17,9 @@ export default function About() {
         <Col>
           <EducationCard />
         </Col>
-        <Col>Work Experience</Col>
+        <Col>
+          <WorkExperience />
+        </Col>
       </Row>
     </Container>
   );
