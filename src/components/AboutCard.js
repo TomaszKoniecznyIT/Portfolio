@@ -1,10 +1,10 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import image from "../../static/images/bg23.png";
+import image from "../../static/images/about2.png";
 
 export default function AboutCard() {
   return (
-    <Card className="mx-auto my-5" style={{ width: "70vw" }}>
+    <Card>
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>About</Card.Title>

@@ -6,7 +6,7 @@ export default function About() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col className="my-5">
           <AboutCard />
         </Col>
       </Row>
