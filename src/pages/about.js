@@ -14,10 +14,10 @@ export default function About() {
         </Col>
       </Row>
       <Row className="my-5">
-        <Col>
+        <Col className="d-flex ">
           <EducationCard />
         </Col>
-        <Col>
+        <Col className="d-flex ">
           <WorkExperience />
         </Col>
       </Row>
