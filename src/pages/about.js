@@ -9,7 +9,7 @@ export default function About() {
     <Container>
       <Row className="my-5">
         <Col>
-          <h1>About</h1>
+          <h1>ABOUT</h1>
           <AboutCard />
         </Col>
       </Row>
