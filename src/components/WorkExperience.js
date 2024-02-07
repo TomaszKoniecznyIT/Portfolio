@@ -4,7 +4,7 @@ import image from "../../static/images/work1.png";
 
 export default function WorkExperience() {
   return (
-    <Card>
+    <Card border="warning">
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>Work Experience</Card.Title>

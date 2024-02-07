@@ -4,7 +4,7 @@ import image from "../../static/images/about2.png";
 
 export default function AboutCard() {
   return (
-    <Card>
+    <Card border="warning">
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card.Title>Motto</Card.Title>
