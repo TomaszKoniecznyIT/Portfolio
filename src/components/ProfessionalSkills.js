@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, ListGroup } from "react-bootstrap";
 import image from "../../static/images/work1.png";
+import { Link } from "gatsby";
 
 export default function ProfessionalSkills() {
   return (
@@ -8,7 +9,12 @@ export default function ProfessionalSkills() {
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card bg="warning">
-          <Card.Header>PROFESSIONAL SKILLS</Card.Header>
+          <Link
+            to="/skills"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <Card.Header>PROFESSIONAL SKILLS</Card.Header>
+          </Link>
           <ListGroup variant="flush">
             <ListGroup.Item>Hard Skills</ListGroup.Item>
             <ListGroup.Item>Soft Skills</ListGroup.Item>
