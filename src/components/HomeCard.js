@@ -16,7 +16,9 @@ export default function HomeCard() {
           projects.
         </Card.Text>
         <div className="my-2">
-          <Button variant="warning">Show me skills</Button>
+          <Button href="/skills" variant="warning">
+            Show me skills
+          </Button>
         </div>
         <div>
           <Button href="/projects" variant="warning">
