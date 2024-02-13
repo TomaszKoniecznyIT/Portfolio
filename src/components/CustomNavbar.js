@@ -21,6 +21,7 @@ function CustomNavbar() {
           <Nav className="d-flex">
             <Nav.Link href="/">HOME</Nav.Link>
             <Nav.Link href="/about">ABOUT</Nav.Link>
+            <Nav.Link href="/skills">SKILLS</Nav.Link>
             <Nav.Link href="/projects">PROJECTS</Nav.Link>
             <Nav.Link href="/contact">CONTACT</Nav.Link>
           </Nav>
