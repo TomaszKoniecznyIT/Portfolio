@@ -2,7 +2,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import AboutCard from "../components/AboutCard";
 import EducationCard from "../components/EducationCard";
-import WorkExperience from "../components/WorkExperience";
+import ProfessionalSkills from "../components/ProfessionalSkills";
 
 export default function About() {
   return (
@@ -18,7 +18,7 @@ export default function About() {
           <EducationCard />
         </Col>
         <Col className="d-flex ">
-          <WorkExperience />
+          <ProfessionalSkills />
         </Col>
       </Row>
     </Container>

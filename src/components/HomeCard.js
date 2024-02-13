@@ -19,7 +19,9 @@ export default function HomeCard() {
           <Button variant="warning">Show me skills</Button>
         </div>
         <div>
-          <Button variant="warning">show me projects</Button>
+          <Button href="/projects" variant="warning">
+            show me projects
+          </Button>
         </div>
       </Card.Body>
     </Card>
