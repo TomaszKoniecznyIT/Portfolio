@@ -14,11 +14,11 @@ export default function ProfessionalSkills() {
             style={{ textDecoration: "none", color: "inherit" }}
           >
             <Card.Header>PROFESSIONAL SKILLS</Card.Header>
+            <ListGroup variant="flush">
+              <ListGroup.Item>Hard Skills</ListGroup.Item>
+              <ListGroup.Item>Soft Skills</ListGroup.Item>
+            </ListGroup>
           </Link>
-          <ListGroup variant="flush">
-            <ListGroup.Item>Hard Skills</ListGroup.Item>
-            <ListGroup.Item>Soft Skills</ListGroup.Item>
-          </ListGroup>
         </Card>
       </Card.Body>
     </Card>

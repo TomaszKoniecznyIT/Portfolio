@@ -1,8 +1,8 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import AboutCard from "../components/AboutCard";
-import EducationCard from "../components/EducationCard";
-import ProfessionalSkills from "../components/ProfessionalSkills";
+import AboutCard from "../../components/AboutCard";
+import EducationCard from "../../components/EducationCard";
+import ProfessionalSkills from "../../components/ProfessionalSkills";
 
 export default function About() {
   return (
