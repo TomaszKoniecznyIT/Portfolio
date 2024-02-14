@@ -1,8 +1,8 @@
 import React from "react";
 import { Card, CardGroup, CardText } from "react-bootstrap";
+import { Link } from "gatsby";
 import image1 from "../../static/images/university.png";
 import image2 from "../../static/images/uz_logo.jpg";
-import { Link } from "gatsby";
 
 export default function University() {
   return (
