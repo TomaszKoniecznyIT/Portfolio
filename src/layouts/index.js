@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <Card className="text-center">
       <CustomNavbar />
-      <div>{children}</div>
+      {children}
       <Card.Footer>
         <small className="text-muted">Copyright 2024 Tomasz Konieczny</small>
       </Card.Footer>
