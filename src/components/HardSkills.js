@@ -8,6 +8,9 @@ import logoCSS from "../../static/images/css.png";
 import logoHTML from "../../static/images/html.png";
 import logoGitHub from "../../static/images/github.png";
 import logoPostgreSQL from "../../static/images/postgresql.png";
+import logoMySQL from "../../static/images/mysql.png";
+import logoSQLite from "../../static/images/sqlite.png";
+import logoMongoDB from "../../static/images/mongodb.png";
 
 const skillsData = [
   { id: 1, name: "Java Script", logo: logoJS },
@@ -18,6 +21,9 @@ const skillsData = [
   { id: 6, name: "", logo: logoFlask },
   { id: 7, name: "GitHub", logo: logoGitHub },
   { id: 8, name: "PostgreSQL", logo: logoPostgreSQL },
+  { id: 9, name: "MySQL", logo: logoMySQL },
+  { id: 10, name: "SQLite", logo: logoSQLite },
+  { id: 11, name: "MongoDB", logo: logoMongoDB },
 ];
 
 export default function HardSkills() {
