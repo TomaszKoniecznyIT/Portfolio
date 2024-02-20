@@ -56,8 +56,8 @@ const skillsData = [
   { id: 24, name: "Tkinter", logo: logoTkinter },
   { id: 25, name: "Pygame", logo: logoPygame },
   { id: 26, name: "Gatsby", logo: logoGatsby },
-  { id: 26, name: "Midjourney", logo: logoMidjourney },
-  { id: 27, name: "ChatGPT", logo: logoChatGPT },
+  { id: 27, name: "Midjourney", logo: logoMidjourney },
+  { id: 28, name: "ChatGPT", logo: logoChatGPT },
 ];
 
 export default function HardSkills() {
@@ -65,7 +65,11 @@ export default function HardSkills() {
     <Container>
       <Row>
         {skillsData.map((skill) => (
-          <Card key={skill.id} style={{ width: "9rem", margin: "10px" }}>
+          <Card
+            key={skill.id}
+            style={{ width: "9rem", margin: "10px" }}
+            border="warning"
+          >
             <Card.Title>{skill.name}</Card.Title>
             <Image src={skill.logo} />
           </Card>
