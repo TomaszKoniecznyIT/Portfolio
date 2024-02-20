@@ -1,6 +1,6 @@
 import React from "react";
 import HardSkills from "../components/HardSkills";
-import { Container, Card } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 export default function skills() {
   return (

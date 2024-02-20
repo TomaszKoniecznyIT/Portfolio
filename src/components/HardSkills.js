@@ -11,6 +11,15 @@ import logoPostgreSQL from "../../static/images/postgresql.png";
 import logoMySQL from "../../static/images/mysql.png";
 import logoSQLite from "../../static/images/sqlite.png";
 import logoMongoDB from "../../static/images/mongodb.png";
+import logoBootstrap from "../../static/images/bootstrap.png";
+import logoReactBootstrap from "../../static/images/reactbootstrap.png";
+import logoVSC from "../../static/images/vsc.png";
+import logoPyCharm from "../../static/images/pycharm.jpg";
+import logoAnaconda from "../../static/images/anaconda.png";
+import logoJupyter from "../../static/images/jupyter.png";
+import logoDBeaver from "../../static/images/dbeaver.png";
+import logoNetlify from "../../static/images/netlify.png";
+import logoDocker from "../../static/images/docker.png";
 
 const skillsData = [
   { id: 1, name: "Java Script", logo: logoJS },
@@ -24,6 +33,15 @@ const skillsData = [
   { id: 9, name: "MySQL", logo: logoMySQL },
   { id: 10, name: "SQLite", logo: logoSQLite },
   { id: 11, name: "MongoDB", logo: logoMongoDB },
+  { id: 12, name: "Bootstrap", logo: logoBootstrap },
+  { id: 13, name: "React-Bootstrap", logo: logoReactBootstrap },
+  { id: 14, name: "VSC", logo: logoVSC },
+  { id: 15, name: "PyCharm", logo: logoPyCharm },
+  { id: 16, name: "Anaconda", logo: logoAnaconda },
+  { id: 17, name: "Jupyter", logo: logoJupyter },
+  { id: 18, name: "DBeaver", logo: logoDBeaver },
+  { id: 19, name: "Netlify", logo: logoNetlify },
+  { id: 19, name: "Docker", logo: logoDocker },
 ];
 
 export default function HardSkills() {
