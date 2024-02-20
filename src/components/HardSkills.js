@@ -20,6 +20,14 @@ import logoJupyter from "../../static/images/jupyter.png";
 import logoDBeaver from "../../static/images/dbeaver.png";
 import logoNetlify from "../../static/images/netlify.png";
 import logoDocker from "../../static/images/docker.png";
+import logoPytest from "../../static/images/pytest.png";
+import logoPandas from "../../static/images/pandas.png";
+import logoNumPy from "../../static/images/numpy.png";
+import logoTkinter from "../../static/images/tkinter.jpg";
+import logoPygame from "../../static/images/pygame.png";
+import logoGatsby from "../../static/images/gatsby.png";
+import logoMidjourney from "../../static/images/midjourney.png";
+import logoChatGPT from "../../static/images/chatgpt.png";
 
 const skillsData = [
   { id: 1, name: "Java Script", logo: logoJS },
@@ -27,7 +35,7 @@ const skillsData = [
   { id: 3, name: "HTML", logo: logoHTML },
   { id: 4, name: "CSS", logo: logoCSS },
   { id: 5, name: "Python", logo: logoPython },
-  { id: 6, name: "", logo: logoFlask },
+  { id: 6, name: "Flask", logo: logoFlask },
   { id: 7, name: "GitHub", logo: logoGitHub },
   { id: 8, name: "PostgreSQL", logo: logoPostgreSQL },
   { id: 9, name: "MySQL", logo: logoMySQL },
@@ -41,7 +49,15 @@ const skillsData = [
   { id: 17, name: "Jupyter", logo: logoJupyter },
   { id: 18, name: "DBeaver", logo: logoDBeaver },
   { id: 19, name: "Netlify", logo: logoNetlify },
-  { id: 19, name: "Docker", logo: logoDocker },
+  { id: 20, name: "Docker", logo: logoDocker },
+  { id: 21, name: "Pytest", logo: logoPytest },
+  { id: 22, name: "Pandas", logo: logoPandas },
+  { id: 23, name: "NumPy", logo: logoNumPy },
+  { id: 24, name: "Tkinter", logo: logoTkinter },
+  { id: 25, name: "Pygame", logo: logoPygame },
+  { id: 26, name: "Gatsby", logo: logoGatsby },
+  { id: 26, name: "Midjourney", logo: logoMidjourney },
+  { id: 27, name: "ChatGPT", logo: logoChatGPT },
 ];
 
 export default function HardSkills() {
@@ -50,8 +66,8 @@ export default function HardSkills() {
       <Row>
         {skillsData.map((skill) => (
           <Card key={skill.id} style={{ width: "9rem", margin: "10px" }}>
-            <Image src={skill.logo} />
             <Card.Title>{skill.name}</Card.Title>
+            <Image src={skill.logo} />
           </Card>
         ))}
       </Row>

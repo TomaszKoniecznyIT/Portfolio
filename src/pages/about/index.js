@@ -13,10 +13,10 @@ export default function About() {
         </Col>
       </Row>
       <Row className="my-5">
-        <Col className="d-flex ">
+        <Col className="d-flex">
           <EducationCard />
         </Col>
-        <Col className="d-flex ">
+        <Col className="d-flex">
           <ProfessionalSkills />
         </Col>
       </Row>
