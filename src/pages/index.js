@@ -6,11 +6,11 @@ import HomeCard from "../components/HomeCard";
 
 export default function Home() {
   return (
-    <>
+    <div class="card" style={{ border: "none" }}>
       <Image src={image} />
       <div class="card-img-overlay">
         <HomeCard />
       </div>
-    </>
+    </div>
   );
 }

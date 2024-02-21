@@ -7,7 +7,7 @@ export default function HomeCard() {
       style={{
         backgroundColor: "transparent",
         position: "relative",
-        top: "15vw",
+        top: "6vw",
         border: "none",
         textAlign: "left",
         color: "white",
