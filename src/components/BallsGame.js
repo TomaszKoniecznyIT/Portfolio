@@ -1,11 +1,13 @@
 import React from "react";
-import { Card, Container } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import BallsGameCarusel from "./BallsGameCarusel";
 
 export default function BallsGame() {
   return (
-    <Card>
-      <Card.Title>Balls Game</Card.Title>
-      <Card.Text>
+    <Card border="warning">
+      <Card.Title className="my-3">Balls Game</Card.Title>
+      <BallsGameCarusel />
+      <Card.Text className="my-3">
         I embarked on my coding journey with Python. Once I had mastered the
         fundamentals, I started tackling challenges on platforms like Codewars.
         To diversify my coding practice, I decided to create a fully functional
@@ -14,7 +16,7 @@ export default function BallsGame() {
         engrossed in a simple logic game on her laptop, that an idea struck me:
         could I, after just a few months of learning Python, create a duplicate
         of such a game? This sparked the inception of my first independent
-        project.{" "}
+        project.
       </Card.Text>
     </Card>
   );

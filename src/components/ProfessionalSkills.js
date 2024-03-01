@@ -11,18 +11,22 @@ export default function ProfessionalSkills() {
         <Card bg="warning">
           <Card.Header>PROFESSIONAL SKILLS</Card.Header>
           <ListGroup variant="flush">
-            <Link
-              to="/skills#hard_skills"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <ListGroup.Item>Hard Skills</ListGroup.Item>
-            </Link>
-            <Link
-              to="/skills#soft_skills"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <ListGroup.Item>Soft Skills</ListGroup.Item>
-            </Link>
+            <ListGroup.Item>
+              <Link
+                to="/skills#hard_skills"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Hard Skills
+              </Link>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <Link
+                to="/skills#soft_skills"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Soft Skills
+              </Link>
+            </ListGroup.Item>
           </ListGroup>
         </Card>
       </Card.Body>
