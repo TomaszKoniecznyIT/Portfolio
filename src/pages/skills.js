@@ -6,7 +6,7 @@ import SoftSkills from "../components/SoftSkills";
 export default function skills() {
   return (
     <Card>
-      <Card.Header>
+      <Card.Header id="hard_skills">
         <Card.Title>Hard Skills</Card.Title>
       </Card.Header>
       <Card.Title className="my-3">
@@ -17,7 +17,7 @@ export default function skills() {
       <Card.Body>
         <HardSkills />
       </Card.Body>
-      <Card.Header>
+      <Card.Header id="soft_skills">
         <Card.Title>Soft Skills</Card.Title>
       </Card.Header>
       <Card.Title className="my-3">

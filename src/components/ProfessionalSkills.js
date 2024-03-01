@@ -9,16 +9,21 @@ export default function ProfessionalSkills() {
       <Card.Img variant="top" src={image} />
       <Card.Body>
         <Card bg="warning">
-          <Link
-            to="/skills"
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <Card.Header>PROFESSIONAL SKILLS</Card.Header>
-            <ListGroup variant="flush">
+          <Card.Header>PROFESSIONAL SKILLS</Card.Header>
+          <ListGroup variant="flush">
+            <Link
+              to="/skills#hard_skills"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <ListGroup.Item>Hard Skills</ListGroup.Item>
+            </Link>
+            <Link
+              to="/skills#soft_skills"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
               <ListGroup.Item>Soft Skills</ListGroup.Item>
-            </ListGroup>
-          </Link>
+            </Link>
+          </ListGroup>
         </Card>
       </Card.Body>
     </Card>
