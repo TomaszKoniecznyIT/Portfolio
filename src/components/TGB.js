@@ -1,10 +1,12 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import TGBCarusel from "./TGBCarusel";
 
 export default function TGB() {
   return (
     <Card border="warning">
       <Card.Title className="my-3">TGB Project</Card.Title>
+      <TGBCarusel />
       <Card.Text className="my-3">
         The TGB Project is an application that I utilize in my professional
         capacity. It aids me in monitoring sales within the store for which I
