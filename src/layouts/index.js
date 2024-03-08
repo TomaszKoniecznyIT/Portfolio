@@ -11,9 +11,11 @@ export default function Layout({ children }) {
       <CustomNavbar />
       {children}
       <Card.Footer>
-        <small className="text-muted">Copyright 2024 Tomasz Konieczny</small>
-        <Image src={linkedIn} style={{ width: "2rem" }} />
-        <Image src={github} style={{ width: "2rem" }} />
+        <small className="text-muted mx-5">
+          Copyright 2024 Tomasz Konieczny
+        </small>
+        <Image src={linkedIn} style={{ width: "2rem", marginRight: "1rem" }} />
+        <Image src={github} style={{ width: "2rem", marginRight: "1rem" }} />
         <Image src={codewars} style={{ width: "2rem" }} />
       </Card.Footer>
     </Card>
