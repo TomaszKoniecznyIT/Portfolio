@@ -4,7 +4,7 @@ import BallsGameCarusel from "./BallsGameCarusel";
 
 export default function BallsGame() {
   return (
-    <Card border="warning">
+    <Card border="dark" bg="secondary" className="bg-gradient shadow">
       <Card.Title className="my-3">Balls Game</Card.Title>
       <BallsGameCarusel />
       <Card.Text className="my-3">

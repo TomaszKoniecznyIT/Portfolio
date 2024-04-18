@@ -7,7 +7,7 @@ import tgb4 from "../../static/images/tgb4.png";
 
 export default function TGBCarusel() {
   return (
-    <Carousel data-bs-theme="dark">
+    <Carousel>
       <Carousel.Item>
         <Image src={tgb1} style={{ width: "12rem" }} />
         <div>Login to the application.</div>

@@ -4,7 +4,7 @@ import TGBCarusel from "./TGBCarusel";
 
 export default function TGB() {
   return (
-    <Card border="warning">
+    <Card border="dark" bg="secondary" className="bg-gradient shadow">
       <Card.Title className="my-3">TGB Project</Card.Title>
       <TGBCarusel />
       <Card.Text className="my-3">
