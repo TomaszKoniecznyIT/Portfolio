@@ -26,23 +26,25 @@ export default function HomeCard() {
           I invite you to familiarize yourself with the website and the
           projects.
         </Card.Text>
-        <div className="my-2">
-          <Button
-            href="/skills"
-            variant="warning"
-            style={{ fontSize: "2vw", padding: "1% 3%" }}
-          >
-            Show me skills
-          </Button>
-        </div>
-        <div>
-          <Button
-            href="/projects"
-            variant="warning"
-            style={{ fontSize: "2vw", padding: "1% 3%" }}
-          >
-            show me projects
-          </Button>
+        <div className="my-5">
+          <div className="my-2">
+            <Button
+              href="/skills"
+              variant="warning"
+              style={{ fontSize: "1.5vw", padding: "1% 3%" }}
+            >
+              Show me skills
+            </Button>
+          </div>
+          <div>
+            <Button
+              href="/projects"
+              variant="warning"
+              style={{ fontSize: "1.5vw", padding: "1% 3%" }}
+            >
+              Show me projects
+            </Button>
+          </div>
         </div>
       </Card.Body>
     </Card>
