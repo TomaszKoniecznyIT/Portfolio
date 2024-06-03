@@ -6,10 +6,10 @@ import University from "../../components/University";
 export default function education() {
   return (
     <Container>
-      <Row>
+      <Row id="university">
         <University />
       </Row>
-      <Row>
+      <Row id="technical">
         <Technical />
       </Row>
     </Container>
