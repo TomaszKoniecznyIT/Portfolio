@@ -23,7 +23,7 @@ export default function ContactForm() {
       validated={validated}
       onSubmit={handleSubmit}
     >
-      <Row className="mb-4">
+      <Row className="mb-5">
         <Form.Group as={Col} md="6">
           <Form.Label>Name</Form.Label>
           <Form.Control required type="name" className="shadow" />
@@ -41,9 +41,9 @@ export default function ContactForm() {
           </Form.Control.Feedback>
         </Form.Group>
       </Row>
-      <Form.Group className="mb-4">
+      <Form.Group className="mb-5">
         <Form.Label>Message</Form.Label>
-        <Form.Control required as="textarea" rows={3} className="shadow" />
+        <Form.Control required as="textarea" rows={8} className="shadow" />
         <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
         <Form.Control.Feedback type="invalid">
           Please enter your message text.
