@@ -18,8 +18,9 @@ export default function ContactForm() {
   return (
     <Form
       className="mx-5 my-5 text-start"
+      mame="contact"
       data-netlify="true"
-      noValidate
+      method="POST"
       validated={validated}
       onSubmit={handleSubmit}
     >

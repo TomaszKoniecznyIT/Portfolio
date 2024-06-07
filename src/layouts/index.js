@@ -1,6 +1,5 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import { Card, Image } from "react-bootstrap";
 import CustomNavbar from "../components/CustomNavbar";
 import github from "../../static/images/github.png";
