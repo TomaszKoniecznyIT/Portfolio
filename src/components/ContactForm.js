@@ -1,14 +1,15 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
+import { navigate } from "gatsby"; // Zakładając, że używasz Gatsby
 
 export default function ContactForm() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
+
     if (form.checkValidity() === false) {
-      event.preventDefault();
       event.stopPropagation();
       setValidated(false);
     } else {
@@ -40,7 +41,7 @@ export default function ContactForm() {
         <Row className="mb-5">
           <Form.Group as={Col} md="6">
             <Form.Label>Name</Form.Label>
-            <Form.Control required type="name" className="shadow" />
+            <Form.Control name="name" required type="text" className="shadow" />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
               Please enter your name.
@@ -48,7 +49,12 @@ export default function ContactForm() {
           </Form.Group>
           <Form.Group as={Col} md="6">
             <Form.Label>Email address</Form.Label>
-            <Form.Control required type="email" className="shadow" />
+            <Form.Control
+              name="email"
+              required
+              type="email"
+              className="shadow"
+            />
             <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             <Form.Control.Feedback type="invalid">
               Please enter a valid e-mail address.
@@ -57,7 +63,13 @@ export default function ContactForm() {
         </Row>
         <Form.Group className="mb-5">
           <Form.Label>Message</Form.Label>
-          <Form.Control required as="textarea" rows={8} className="shadow" />
+          <Form.Control
+            name="message"
+            required
+            as="textarea"
+            rows={8}
+            className="shadow"
+          />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
           <Form.Control.Feedback type="invalid">
             Please enter your message text.
