@@ -14,6 +14,8 @@ export default function ContactForm() {
     } else {
       setValidated(true);
 
+      const formData = new FormData(form);
+
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
