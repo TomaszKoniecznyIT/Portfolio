@@ -10,9 +10,10 @@ export default function ContactForm() {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
+      setValidated(false);
+    } else {
+      setValidated(true);
     }
-
-    setValidated(true);
   };
 
   return (
@@ -21,16 +22,11 @@ export default function ContactForm() {
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
     >
       <input type="hidden" name="form-name" value="contact" />
-      <Form
-        className="mx-5 my-5 text-start"
-        mame="contact"
-        data-netlify="true"
-        method="POST"
-        validated={validated}
-        onSubmit={handleSubmit}
-      >
+      <input type="hidden" name="bot-field" />
+      <Form className="mx-5 my-5 text-start" noValidate validated={validated}>
         <Row className="mb-5">
           <Form.Group as={Col} md="6">
             <Form.Label>Name</Form.Label>
