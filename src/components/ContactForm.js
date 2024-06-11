@@ -10,8 +10,6 @@ export default function ContactForm() {
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
-
-      setValidated(false);
     } else {
       setValidated(true);
     }
@@ -23,6 +21,7 @@ export default function ContactForm() {
       name="contact"
       data-netlify="true"
       method="POST"
+      noValidate
       validated={validated}
       onSubmit={handleSubmit}
     >
