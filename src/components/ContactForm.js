@@ -67,7 +67,7 @@ export default function ContactForm() {
             name="message"
             required
             as="textarea"
-            rows={8}
+            rows={7}
             className="shadow"
           />
           <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
