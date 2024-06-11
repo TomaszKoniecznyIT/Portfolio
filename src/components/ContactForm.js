@@ -21,6 +21,7 @@ export default function ContactForm() {
       mame="contact"
       data-netlify="true"
       method="POST"
+      noValidate
       validated={validated}
       onSubmit={handleSubmit}
     >
