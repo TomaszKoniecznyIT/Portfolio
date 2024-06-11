@@ -6,13 +6,15 @@ export default function ContactForm() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
-    event.preventDefault();
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
+      event.preventDefault();
       event.stopPropagation();
-    }
 
-    setValidated(true);
+      setValidated(false);
+    } else {
+      setValidated(true);
+    }
   };
 
   return (
@@ -21,7 +23,6 @@ export default function ContactForm() {
       name="contact"
       data-netlify="true"
       method="POST"
-      noValidate
       validated={validated}
       onSubmit={handleSubmit}
     >
