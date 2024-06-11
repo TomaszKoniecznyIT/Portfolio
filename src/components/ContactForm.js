@@ -13,6 +13,14 @@ export default function ContactForm() {
       setValidated(false);
     } else {
       setValidated(true);
+
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => navigate("/thank-you/"))
+        .catch((error) => alert(error));
     }
   };
 
