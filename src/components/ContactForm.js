@@ -18,7 +18,7 @@ export default function ContactForm() {
   return (
     <Form
       className="mx-5 my-5 text-start"
-      mame="contact"
+      name="contact"
       data-netlify="true"
       method="POST"
       noValidate
