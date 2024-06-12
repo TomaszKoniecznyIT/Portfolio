@@ -6,25 +6,12 @@ export default function ContactForm() {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
+    event.preventDefault();
     const form = event.currentTarget;
+    console.log(form);
     if (form.checkValidity() === false) {
-      event.preventDefault();
       event.stopPropagation();
     } else {
-      const formData = new FormData(form);
-
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
-      })
-        .then(() => {
-          console.log("Form successfully submitted");
-        })
-        .catch((error) => {
-          console.error("Form submission error:", error);
-        });
-
       setValidated(true);
     }
   };
@@ -39,6 +26,7 @@ export default function ContactForm() {
       validated={validated}
       onSubmit={handleSubmit}
     >
+      <input type="hidden" name="form-name" value="contact" />
       <Row className="mb-5">
         <Form.Group as={Col} md="6">
           <Form.Label>Name</Form.Label>
