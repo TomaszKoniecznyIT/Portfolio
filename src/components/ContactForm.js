@@ -14,16 +14,18 @@ export default function ContactForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     const form = event.currentTarget;
-    console.log(form);
+
     if (form.checkValidity() === false) {
       event.stopPropagation();
     } else {
+      const formData = new FormData(form);
+      const formObject = Object.fromEntries(formData.entries());
       fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
           "form-name": "contact",
-          ...form,
+          ...formObject,
         }),
       })
         .then(() => alert("Success !!!"))
