@@ -18,20 +18,19 @@ export default function ContactForm() {
     if (form.checkValidity() === false) {
       event.stopPropagation();
     } else {
-      fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encode({
-          'form-name': "contact",
+          "form-name": "contact",
           ...form,
         }),
       })
         .then(() => alert("Success !!!"))
-        .catch((error) => alert(error))
+        .catch((error) => alert(error));
     }
-  
-      setValidated(true);
-    }
+
+    setValidated(true);
   };
 
   return (
