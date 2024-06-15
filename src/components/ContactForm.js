@@ -2,6 +2,12 @@ import React from "react";
 import { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
 
+function encode(data) {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+}
+
 export default function ContactForm() {
   const [validated, setValidated] = useState(false);
 
@@ -12,6 +18,18 @@ export default function ContactForm() {
     if (form.checkValidity() === false) {
       event.stopPropagation();
     } else {
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': "contact",
+          ...form,
+        }),
+      })
+        .then(() => alert("Success !!!"))
+        .catch((error) => alert(error))
+    }
+  
       setValidated(true);
     }
   };
@@ -21,7 +39,8 @@ export default function ContactForm() {
       className="mx-5 my-5 text-start"
       name="contact"
       data-netlify="true"
-      method="POST"
+      method="post"
+      data-netlify-honeypot="bot-field"
       noValidate
       validated={validated}
       onSubmit={handleSubmit}
