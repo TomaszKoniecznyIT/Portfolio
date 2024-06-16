@@ -6,8 +6,8 @@ import HomeCard from "../components/HomeCard";
 
 export default function Home() {
   return (
-    <div class="card" style={{ border: "none" }}>
-      <Image src={image} />
+    <div className="card border-0">
+      <Image src={image} className="img-fluid" />
       <div class="card-img-overlay">
         <HomeCard />
       </div>
