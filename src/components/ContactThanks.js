@@ -2,9 +2,9 @@ import React from "react";
 
 export default function ContactThanks() {
   return (
-    <div>
-      <h1>Thank You for Getting in Touch!</h1>
-      <h2>I Appreciate Your Message</h2>
+    <div className="my-5 mx-5 text-start">
+      <h1 className="my-5">Thank You for Getting in Touch!</h1>
+      <h2 className="my-5">I Appreciate Your Message</h2>
       <p>Dear Visitor,</p>
       <p>
         Thank you for reaching out! Your message has been successfully received,
