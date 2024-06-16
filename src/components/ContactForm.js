@@ -1,3 +1,4 @@
+import { navigate } from "gatsby";
 import React from "react";
 import { useState } from "react";
 import { Form, Row, Col, Button } from "react-bootstrap";
@@ -28,7 +29,7 @@ export default function ContactForm() {
           ...formObject,
         }),
       })
-        .then(() => alert("Success !!!"))
+        .then(() => navigate("/contact/thanks"))
         .catch((error) => alert(error));
     }
 
