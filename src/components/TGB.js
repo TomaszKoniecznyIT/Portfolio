@@ -1,6 +1,7 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Image, Button } from "react-bootstrap";
 import TGBCarusel from "./TGBCarusel";
+import github from "../../static/images/github.png";
 
 export default function TGB() {
   return (
@@ -17,6 +18,24 @@ export default function TGB() {
         application includes the monitoring of sales against sales targets and
         the provision of straightforward analytical capabilities.
       </Card.Text>
+      <div className="my-3 mx-2">
+        <Button
+          size="sm"
+          href="https://github.com/TomaszKoniecznyIT/tgb"
+          variant="dark"
+        >
+          <Image src={github} style={{ width: "2rem", marginRight: "1rem" }} />
+          front-end
+        </Button>{" "}
+        <Button
+          size="sm"
+          href="https://github.com/TomaszKoniecznyIT/Python_TGB"
+          variant="dark"
+        >
+          <Image src={github} style={{ width: "2rem", marginRight: "1rem" }} />
+          back-end
+        </Button>
+      </div>
     </Card>
   );
 }
