@@ -1,5 +1,7 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Link } from "gatsby";
+import { Card, Image } from "react-bootstrap";
+import github from "../../static/images/github.png";
 import BallsGameCarusel from "./BallsGameCarusel";
 
 export default function BallsGame() {
@@ -18,6 +20,12 @@ export default function BallsGame() {
         of such a game? This sparked the inception of my first independent
         project.
       </Card.Text>
+      <Link
+        className="my-3"
+        to="https://github.com/TomaszKoniecznyIT/Balls-Game"
+      >
+        <Image src={github} style={{ width: "2rem", marginRight: "1rem" }} />
+      </Link>
     </Card>
   );
 }
