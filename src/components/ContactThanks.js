@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import React from "react";
 
 export default function ContactThanks() {
@@ -18,6 +19,7 @@ export default function ContactThanks() {
       </p>
       <p>Warm regards,</p>
       <p>Tom</p>
+      <Link to="/">Back to Home Page</Link>
     </div>
   );
 }
