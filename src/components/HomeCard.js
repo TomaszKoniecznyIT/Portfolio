@@ -19,7 +19,7 @@ export default function HomeCard() {
         <Card.Title style={{ fontSize: "4vw" }}>Hello, I am Tom</Card.Title>
         <Card.Text>What are challenges for you?</Card.Text>
         <Card.Text>
-          For me, the challenges are a source of energy and enthusiasm. thanks
+          For me, the challenges are a source of energy and enthusiasm. Thanks
           to them, the world is a more exciting place.
         </Card.Text>
         <Card.Text>
@@ -33,7 +33,7 @@ export default function HomeCard() {
               variant="warning"
               style={{ fontSize: "1.5vw", padding: "1% 3%" }}
             >
-              Show me skills
+              my skills
             </Button>
           </div>
           <div>
@@ -42,7 +42,7 @@ export default function HomeCard() {
               variant="warning"
               style={{ fontSize: "1.5vw", padding: "1% 3%" }}
             >
-              Show me projects
+              my projects
             </Button>
           </div>
         </div>
