@@ -5,7 +5,7 @@ import game2 from "../../static/images/Game2.png";
 import game3 from "../../static/images/Game3.png";
 import game4 from "../../static/images/Game4.png";
 
-export default function BallsGameCarusel() {
+export default function Connect5GameCarusel() {
   return (
     <Carousel data-bs-theme="dark">
       <Carousel.Item>
@@ -14,7 +14,7 @@ export default function BallsGameCarusel() {
       </Carousel.Item>
       <Carousel.Item>
         <Image src={game2} style={{ width: "12rem" }} />
-        <div>The game involves placing at least 5 balls in a line.</div>
+        <div>The game involves placing at least 5 circles in a line.</div>
       </Carousel.Item>
       <Carousel.Item>
         <Image src={game3} style={{ width: "12rem" }} />
@@ -22,7 +22,7 @@ export default function BallsGameCarusel() {
       </Carousel.Item>
       <Carousel.Item>
         <Image src={game4} style={{ width: "12rem" }} />
-        <div>If not, another 3 balls appear on the board.</div>
+        <div>If not, another 3 circles appear on the board.</div>
       </Carousel.Item>
     </Carousel>
   );

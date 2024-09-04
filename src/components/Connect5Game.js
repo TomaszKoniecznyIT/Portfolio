@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "gatsby";
 import { Card, Image } from "react-bootstrap";
 import github from "../../static/images/github.png";
-import BallsGameCarusel from "./BallsGameCarusel";
+import Connect5GameCarusel from "./Connect5GameCarusel";
 
-export default function BallsGame() {
+export default function Connect5Game() {
   return (
     <Card border="dark" bg="secondary" className="bg-gradient shadow">
-      <Card.Title className="my-3">Balls Game</Card.Title>
-      <BallsGameCarusel />
+      <Card.Title className="my-3">Connect5 Game</Card.Title>
+      <Connect5GameCarusel />
       <Card.Text className="my-3">
         I embarked on my coding journey with Python. Once I had mastered the
         fundamentals, I started tackling challenges on platforms like Codewars.
